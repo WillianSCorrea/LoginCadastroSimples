@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecte-se</title>
+    <link rel="icon" href="./download.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            max-width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:medium; 
+        }
+        li{
+            display: inline-block;
+            list-style: none;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:medium; 
+        }
+        header{
+        background-color: rgb(172, 84, 255);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+body{
+    background-color: rgba(215, 215, 229, 0.795);
+}
+
+    .caixa {
+        position: relative;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%);
+        max-width: 500px;
+        min-width: 300px;
+        min-height: 283px;
+        border: 5px solid white;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: rgb(238, 238, 238);;
+        
+}
+    .caixa2{
+        position:relative;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%);
+        max-width: 500px;
+        min-width: 300px;
+        min-height: 300px;
+        border: 5px solid white;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgb(243, 243, 245);;
+        
+
+    }
+    #n2{
+        position: relative;
+        width: 190px;
+        left: 50%;
+        transform: translate(-50%);
+    
+    }
+    #n3{
+        position: relative;
+        width: 190px;
+        left: 50%;
+        top: 15% ;
+        transform: translate(-50% );
+    }
+    
+    .passa{
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        border-radius: 200px;
+        border: 0.25px solid blueviolet;
+        cursor: pointer;
+    }
+#Lica{
+    padding-right: 15px;
+}
+#lilo{
+    padding-right: 15px;
+}
+    .li4{
+        padding-right: 15px ;
+        padding-left: 16px;
+        background-color: blueviolet;
+        border-radius:300px; /* 0 0 300px  */
+        color: rgb(255, 255, 255);
+        transition: 500ms;
+    }
+
+h2{
+    color: rgb(106, 8, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0  20px 0 20px;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+    color: blueviolet;
+    
+}
+form input{
+    padding: 7px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size:16px;
+    padding-inline-start: 15px;
+}
+form .label{
+    margin-top: 6px;
+    font-size: large;
+
+}
+form button{
+    padding: 10px;
+    background: white;
+    border: 1px solid rgba(137, 43, 226, 0.8) ;;
+    border-radius: 20px;
+    color: rgba(137, 43, 226, 0.8) ;
+    margin-top: -10px;
+    font-size:medium;
+    font-weight: 600;
+    cursor: pointer;
+}
+form button:hover{
+    background: rgba(137, 43, 226, 0.8) ;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+.s{
+    position: absolute;
+    z-index: -5;
+        opacity: 0;
+        /* transition: 400ms; */
+}
+.p{
+    position: absolute;
+    z-index: 5;
+        opacity: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="n1">
+            <img src="" alt="">
+        </nav>
+    </header>
+
+    <nav id="n2" class="">
+        <div class="passa" >
+            <li class="li4" id="Lica">Cadastro</li>
+            <li id="lilo">Login</li>
+        </div> 
+    </nav> <br>
+<div class="caixa s " id="Log" > 
+    <br>
+    <h2>Login</h2>
+    <form action="" method="">
+            <label for="usu2">Usuario</label>
+                <input type="text" name="usu2" id="usu2" placeholder="Digite seu Usuario">
+            <label for="pass3">Senha:</label>
+                <input type="password" name="pass3" id="pass3" placeholder="Sua Senha">
+        <br>
+            <button type="button">Login</button>
+    </form>
+</div>
+
+
+<div class="caixa2  " id="Cad"> 
+    <br>
+    <h2>Cadastro</h2>
+    <form action="">
+        <label for="usu">Usuario : </label>
+        <input type="text" name="usu" id="usu" placeholder=" Nome ou Email">
+        <label class="label" for="email">Email : </label>
+        <input type="email" name="email" id="email" placeholder=" Email">
+    <label class="label"  for="pass">Senha:</label>
+    <input type="password" name="pass" id="pass" placeholder="Crie uma Senha">
+    <label class="label"  for="pass2">Repitir senha:</label>
+    <input type="password" name="pass2" id="pass2" placeholder="Repita a Senha Criada...">
+    <br>
+<button type="button">Cadastrar</button>
+    </form>
+    
+</div>
+    
+
+<script>
+    var BtnCa = document.querySelector("#Lica");
+    var BtnLo = document.querySelector("#lilo");
+    var Cad = document.querySelector("#Cad") ;
+    var Log = document.querySelector("#Log");
+
+    var aaa = () => {
+    Cad.classList.add("s");
+    Log.classList.remove("s");
+    BtnCa.classList.remove("li4");
+    BtnLo.classList.add("li4");
+};
+
+[lilo].forEach((elmt) => {
+    elmt.addEventListener("click", () => aaa());
+});
+    var bbb = () => {
+    Cad.classList.remove("s");
+    Log.classList.add("s");
+    BtnCa.classList.add("li4");
+    BtnLo.classList.remove("li4");
+};
+
+[Lica].forEach((elmt) => {
+    elmt.addEventListener("click", () => bbb());
+});
+
+</script>
+</body>
+</html>
